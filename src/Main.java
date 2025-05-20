@@ -3,11 +3,11 @@
 public class Main {
     public static void main(String[] args) {
 
-        Integer amount = 100;//состояние счета
-        Integer updateAmount = 1800;//сумма пополнения
-        Integer barrierBonus = 1000;//Порог начисления бонусов
-        Integer costBonus = 100;//сумма за которую начисляем 1 балл
-        Integer bonus; // количество бонусов
+        int amount = 100;//состояние счета
+        int updateAmount = 1800;//сумма пополнения
+        int barrierBonus = 1000;//Порог начисления бонусов
+        int costBonus = 100;//сумма за которую начисляем 1 балл
+        int bonus; // количество бонусов
 
 
         System.out.println("Счет пополнен на " + updateAmount + " руб.");
