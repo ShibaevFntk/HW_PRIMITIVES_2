@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         int amount = 100;//состояние счета
-        int updateAmount = 1800;//сумма пополнения
+        int updateAmount = 1000;//сумма пополнения
         int barrierBonus = 1000;//Порог начисления бонусов
         int costBonus = 100;//сумма за которую начисляем 1 балл
         int bonus; // количество бонусов
@@ -12,7 +12,7 @@ public class Main {
 
         System.out.println("Счет пополнен на " + updateAmount + " руб.");
 
-        if (updateAmount >= barrierBonus) {//Условным оператором проверяю, превысила ли сумма пополнения порог
+        if (updateAmount > barrierBonus) {//Условным оператором проверяю, превысила ли сумма пополнения порог
             bonus = updateAmount / costBonus; // для этих двух разных сценариев рассчитываю сумму бонуса
             System.out.println("Начислено " + bonus + " бонусов, и вы выиграли автомобиль!!!");
         } else {
